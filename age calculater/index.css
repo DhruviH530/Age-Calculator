@@ -1,0 +1,109 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #8EC5FC, #E0C3FC);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #4B0082;
+  margin-bottom: 25px;
+  font-weight: 600;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #FF6EC7;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+
+label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  color: #555;
+}
+
+
+input[type="date"] {
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus {
+  border-color: #FF6EC7;
+  outline: none;
+}
+
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #FF6EC7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #e055b1;
+  transform: scale(1.05);
+}
+
+
+#result {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #222;
+  font-weight: 500;
+}
+
+
+@media (max-width: 500px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
